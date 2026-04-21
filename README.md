@@ -4,16 +4,16 @@ This repository contains my solutions to various LeetCode problems, organized by
 
 ## Folder Structure
 
-- `easy/`: Solutions to easy-level problems.
-- `medium/`: Solutions to medium-level problems.
-- `hard/`: Solutions to hard-level problems.
-- `notes/`: Additional notes, tips, and explanations.
+- `easy`: Solutions to easy-level problems.
+- `medium`: Solutions to medium-level problems.
+- `hard`: Solutions to hard-level problems.
+- `notes`: Additional notes, tips, and explanations.
 
 ## Languages Used
 
 - Python
 - JavaScript
-- (Add others as needed)
+- (others too)
 
 ## How to Use
 

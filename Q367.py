@@ -1,6 +1,6 @@
 # Given a positive integer num, return true if num is a perfect square or false otherwise.
 
-# A perfect square is an integer that is the square of an integer. In other words, 
+# A perfect square is an integer that is the square of an integer. In other words,
 # it is the product of some integer with itself.
 
 # You must not use any built-in library function, such as sqrt.
@@ -19,16 +19,17 @@
 #     1 <= num <= 23^1 - 1
 
 import math
+
+
 class Solution(object):
     def isPerfectSquare(self, num):
         """
         :type num: int
         :rtype: bool
         """
-        res = num ** 0.5
+        res = num**0.5
         r = math.floor(res)
-        if (res - r) == 0 :
+        if (res - r) == 0:
             return True
         else:
             return False
-        

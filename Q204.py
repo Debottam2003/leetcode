@@ -16,6 +16,7 @@
 # Constraints:
 #     0 <= n <= 5 * 106
 
+
 class Solution(object):
     def countPrimes(self, n):
         """
@@ -23,13 +24,13 @@ class Solution(object):
         :rtype: int
         """
         i = 3
-        n = n - 1 
+        n = n - 1
         count = 0
         if n >= 2:
-            count = 1 
-        while i <= n :
+            count = 1
+        while i <= n:
             flag = 0
-            for j in range(2,i):
+            for j in range(2, i):
                 if i % j == 0:
                     flag = 1
                     break
@@ -37,4 +38,3 @@ class Solution(object):
                 count += 1
             i += 1
         return count
-                

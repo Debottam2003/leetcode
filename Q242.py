@@ -14,6 +14,7 @@
 #     1 <= s.length, t.length <= 5 * 10^4
 #     s and t consist of lowercase English letters.
 
+
 class Solution(object):
     def isAnagram(self, s, t):
         """

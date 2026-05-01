@@ -1,4 +1,4 @@
-# Given a positive integer n, write a function that returns the number of in its binary representation 
+# Given a positive integer n, write a function that returns the number of in its binary representation
 # (also known as the Hamming weight).
 
 # Example 1:
@@ -31,6 +31,7 @@
 # Constraints:
 #     1 <= n <= 2^31 - 1
 
+
 class Solution(object):
     def hammingWeight(self, n):
         """
@@ -47,5 +48,3 @@ class Solution(object):
                 list1.append(1)
             n = n // 2
         return list1.count(1)
-
-        

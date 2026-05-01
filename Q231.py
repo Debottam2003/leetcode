@@ -19,7 +19,7 @@
 # Constraints:
 #     -2^31 <= n <= 2^31 - 1
 
+
 class Solution(object):
     def isPowerOfTwo(self, n):
         return n > 0 and (n & (n - 1)) == 0
-        

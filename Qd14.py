@@ -30,6 +30,7 @@
 #     1 <= nums.length <= 10^4
 #     -2^31 <= nums[i] <= 2^31 - 1
 
+
 class Solution(object):
     def thirdMax(self, nums):
         """
@@ -38,7 +39,7 @@ class Solution(object):
         """
         set1 = set(nums)
         nums = list(set1)
-        nums.sort(reverse = True)
+        nums.sort(reverse=True)
         if len(nums) < 3:
             return nums[0]
         return nums[2]

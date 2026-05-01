@@ -4,7 +4,7 @@
 
 # A self-dividing number is not allowed to contain the digit zero.
 
-# Given two integers left and right, return a list of all the self-dividing numbers 
+# Given two integers left and right, return a list of all the self-dividing numbers
 # in the range [left, right] (both inclusive).
 
 # Example 1:
@@ -18,6 +18,7 @@
 # Constraints:
 #     1 <= left <= right <= 10^4
 
+
 class Solution(object):
     def selfDividingNumbers(self, left, right):
         """
@@ -26,13 +27,13 @@ class Solution(object):
         :rtype: List[int]
         """
         res = []
-        for i in range(left,right+1):
+        for i in range(left, right + 1):
             flag = True
-            if("0" not in str(i)):
+            if "0" not in str(i):
                 for j in str(i):
-                    if(i % int(j) != 0):
+                    if i % int(j) != 0:
                         flag = False
                         break
-                if(flag):
+                if flag:
                     res.append(i)
-        return res      
+        return res

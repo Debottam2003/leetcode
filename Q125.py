@@ -22,6 +22,7 @@
 #     1 <= s.length <= 2 * 105
 #     s consists only of printable ASCII characters.
 
+
 class Solution(object):
     def isPalindrome(self, s):
         """
@@ -31,11 +32,10 @@ class Solution(object):
         newstring = ""
         for i in s:
             if i.isalpha() or i.isdigit():
-                newstring += i 
+                newstring += i
         newstring = newstring.lower()
         s1 = newstring[::-1]
         if newstring == s1:
             return True
         else:
             return False
-        

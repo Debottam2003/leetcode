@@ -18,6 +18,7 @@
 #     1 <= word.length <= 100
 #     word consists of lowercase and uppercase English letters.
 
+
 class Solution(object):
     def detectCapitalUse(self, word):
         """

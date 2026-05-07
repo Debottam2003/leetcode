@@ -1,6 +1,6 @@
 arr = ["flower", "flow", "flight"]
-res = []
 first = arr[0]
+res = []
 
 for j in range(len(first)):
     c = first[j]

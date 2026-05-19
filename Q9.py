@@ -1,4 +1,4 @@
-# Given an integer x, return true if x is a , and false otherwise.
+# Given an integer x, return true if x is a Palindrome, and false otherwise.
 
 # Example 1:
 # Input: x = 121

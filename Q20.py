@@ -2,9 +2,9 @@
 
 # An input string is valid if:
 
-#     Open brackets must be closed by the same type of brackets.
-#     Open brackets must be closed in the correct order.
-#     Every close bracket has a corresponding open bracket of the same type.
+# Open brackets must be closed by the same type of brackets.
+# Open brackets must be closed in the correct order.
+# Every close bracket has a corresponding open bracket of the same type.
 
 # Example 1:
 # Input: s = "()"
@@ -30,16 +30,24 @@
 #     1 <= s.length <= 10^4
 #     s consists of parentheses only '()[]{}'.
 
+
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
         for i in s:
-            if(i == '(' or i == '{' or i == '['):
+            if i == "(" or i == "{" or i == "[":
                 stack.append(i)
             else:
-                if(len(stack) == 0):
+                if len(stack) == 0:
                     return False
                 top = stack.pop()
-                if(i == ')' and top != '(' or i == '}' and top != '{' or i == ']' and top != '['):
+                if (
+                    i == ")"
+                    and top != "("
+                    or i == "}"
+                    and top != "{"
+                    or i == "]"
+                    and top != "["
+                ):
                     return False
         return len(stack) == 0

@@ -5,9 +5,9 @@ def rotate(arr):
     print(arr)
 
 
-rotate([7, 8, 9, 2, 3, 5, 10, 21, 13], 4)
-rotate([1, 2, 3, 4, 5], 2)
-rotate([1, 2, 3, 4], 1)
+rotate([7, 8, 9, 2, 3, 5, 10, 21, 13])
+rotate([1, 2, 3, 4, 5])
+rotate([1, 2, 3, 4])
 
 
 # Method 1
